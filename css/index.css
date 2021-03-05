@@ -12,11 +12,11 @@ header {
     display: flex;
     width: 100%;
     height: 72px;
-    background-color: #3AA1FF;
+    background-color: #0077BA;
     justify-content: flex-end;
     align-items: center;
-    padding: 24px;
 }
+
 .hamburger{
     display: none;
 }
@@ -42,7 +42,6 @@ header {
 .navCstm {
     display: flex;
     justify-content: flex-end;
-    padding: 16px;
     align-items: center;
 }
 @media only screen and (max-width: 1000px) {
@@ -56,7 +55,7 @@ header {
         top: 72px;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
-        background-color: #3AA1FF;
+        background-color: #0077BA;
         z-index: 9999;
     }
     .navlink{
@@ -88,21 +87,85 @@ header {
     transform: rotate(45deg) translate(-5px,-12px);
     transition: 0.3s ease;
 }
-.navlink {
+
+.logoContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    padding: 18px;
+}
+
+.logoContainer:hover{
+    background-color: #004f7c;
+}
+
+.navlink{
     color: white;
     text-decoration: none;
     padding: 16px;
+    padding-top: 20.53px;
+    padding-bottom: 20.53px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.navlink2{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 19.825px;
+    padding-top: 25.825px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .navlink:hover{
-    opacity: 0.4;
+    color: white;
+    background-color: #004f7c;
 }
-.navlogo {
+
+.navlink2:hover{
+    color: white;
+    background-color: #004f7c;
+}
+
+.dropdown-menu{
+    background-color: #0077BA;
+    border: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    padding: 0px;
+}
+.dropdown-toggle::after {
+    border-top: 0px solid;
+    border-right: 0px solid transparent;
+    border-bottom: 0px;
+    border-left: 0px solid transparent;
+    content: url(../images/arrow.svg);
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+.donoContainer{
     display: flex;
     justify-content: center;
-    padding-right: 348px;
+    align-items: center;
+    height: 72px;
+    width: auto;
 }
+
+.donoContainer:hover{
+    color: #004f7c;
+    background-color: #004f7c;
+}
+
 @media only screen and (max-width: 1000px) {
     .navlogo{
         display: flex;
@@ -155,6 +218,14 @@ h4{
     color: white;
 }
 
+.bodytext2{
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    line-height: auto;
+    font-weight: 400;
+    color: white;    
+}
+
 .bodytextsm{
     font-size: 12px;
     letter-spacing: 0.75px;
@@ -205,6 +276,7 @@ h4{
     font-size: 24px;
     background: #0077BA;
 }
+
 .donoInvert{
     color: white;
     letter-spacing: 0.5px;
@@ -219,20 +291,31 @@ h4{
     margin-left: 16px;
     margin-right: 16px;
 }
+
+.donoInvert::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: 0;
+    content: url(../images/donateicon.svg);
+}
+
 .stdDark{
     padding: 12px 12px;
     font-size: 20px;
     line-height: 21px;
     background: #1E1E1E;
 }
+
 .dono:hover{
     color: white;
     background: #0089d8;
 }
+
 .stdDark:hover{
     background: #131313;
     color: white;
 }
+
 /*------------------------------ Buttons ------------------------------*/
 
 
@@ -322,20 +405,20 @@ h4{
     max-width: 605px;
 }
 
-.donoContainer{
+.refundDiv{
+    display: flex;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.donoContainer2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-}
-
-.refundDiv{
-    display: flex;
-    max-width: 300px;
-    text-align: center;
-    padding-top: 12px;
 }
 
 /*  Timeline Div Start  */
@@ -360,7 +443,6 @@ h4{
     text-align: center;
     margin-right: 32px;
     margin-left: 32px;
-
 }
 
 .timelineDiv2{
@@ -468,7 +550,7 @@ h4{
     .workGrid{
     grid-template-columns: 430px;
     }
-  }
+}
 
 @media only screen and (max-width: 470px) {
     .workGrid{
@@ -501,6 +583,7 @@ footer{
     height: 280px;
     width: 100%;
 }
+
 .footerDiv{
     display: flex;
     flex-direction: column;
@@ -526,6 +609,7 @@ footer{
     overflow: hidden;
     z-index: 9998;
 }
+
 .box .percent {
     position: absolute;
     left: 0;
@@ -540,6 +624,7 @@ footer{
     color: #fff;
     font-size: 48px;
 }
+
 .box .water {
     position: absolute;
     left: 0;
@@ -551,27 +636,32 @@ footer{
     background: #0077BA;
     transition: all 0.3s;
 }
+
 .box .water_wave {
     width: 200%;
     position: absolute;
     bottom: 100%;
 }
+
 .box .water_wave_back {
     right: 0;
     fill: #B0E3FF;
     animation: wave-back 1.4s infinite linear;
 }
+
 .box .water_wave_front {
     left: 0;
     fill: #0077BA;
     margin-bottom: -1px;
     animation: wave-front 0.7s infinite linear;
 }
+
 @keyframes wave-front {
     100% {
         transform: translate(-50%, 0);
    }
 }
+
 @keyframes wave-back {
     100% {
         transform: translate(50%, 0);
