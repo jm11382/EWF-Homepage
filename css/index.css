@@ -883,8 +883,8 @@ footer{
         display: flex;
         align-items: start;
         justify-content: center;
-        height: auto;
-        width: 1000px;
+        height: 235px;
+        width: 100%;
         background-color: #B0E3FF;
         padding-top: 48px;
         padding-bottom: 30px;
