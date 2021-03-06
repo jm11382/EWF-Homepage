@@ -200,6 +200,14 @@ ul{
 }
 /* Header End */
 
+.heroimgsm{
+    display: none;
+}
+
+.heroimgxs{
+    display: none;
+}
+
 /* Body Start */
 h1{
     font-size: 48px;
@@ -276,7 +284,7 @@ h4{
 
 .container2 {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -356,7 +364,7 @@ h4{
     padding: 48px;
 }
 
-.whatWeDoDiv{
+.whatWeDoDiv2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,6 +377,16 @@ h4{
 }
 
 .whatWeDoTextDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 475px;
+    padding-right: 64px;
+    line-height: 22px;
+}
+
+.whatWeDoTextDiv2{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -393,6 +411,7 @@ h4{
     background: #ffffff;
     height: 565px;
     width: 100%;
+    padding: 24px;
 }
 
 .helpContainer{
@@ -690,4 +709,336 @@ footer{
     100% {
         transform: translate(50%, 0);
    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 36px;
+        letter-spacing: auto;
+        line-height: 40px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .bodytext1{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: auto;
+        font-weight: 400;
+        color: white;
+    }
+
+
+}
+
+@media only screen and (max-width: 765px) {
+    .heroimgsm{
+    display: block;
+    }
+    .heroimglg{
+        display: none;
+    }
+    .container2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        max-width: 75%;
+        z-index: 9998;
+    }
+
+    .whatWeDoDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: url('../images/whatwedoimg.png') no-repeat center;
+        background-size: cover;
+        overflow: hidden;
+        height: 960px;
+        width: 100%;
+        padding: 48px;
+        text-align: center;
+    }
+
+    
+    .whatWeDoTextDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        max-width: 475px;
+        padding-right: 0px;
+        line-height: 22px;
+    }
+
+
+    .ytube{
+        width: 270px;
+        height: 300px;
+    }
+
+    h2{
+        font-size: 30px;
+        letter-spacing: auto;
+        line-height: 32px;
+        font-weight: 700;
+        color: white; 
+    }
+
+    .wwdd2img{
+        width: 325px;
+        height: 265px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .whatWeDoDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: url('../images/tsifotaimg.png') no-repeat center;
+        background-size: cover;
+        overflow: hidden;
+        height: 960px;
+        width: 100%;
+        padding: 48px;
+    }
+}
+
+.whatWeDoTextDiv2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 475px;
+    padding-right: 0px;
+    line-height: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroimgxs{
+        display: block;
+    }
+    .heroimgsm{
+        display: none;
+    }
+    .heroimglg{
+        display: none;
+    }
+    .container2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        max-width: 75%;
+        z-index: 9998;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heroimgxs{
+        display: block;
+    }
+
+    .heroimgbtn{
+        display: none !important;
+    }
+
+    .heroimgsm{
+        display: none;
+    }
+    .heroimglg{
+        display: none;
+    }
+    .container2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        max-width: 75%;
+        z-index: 9998;
+    }
+    .footerimg{
+        height: 136.88px;
+        width: 325px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .timelineContainer1{
+        left: 0;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: auto;
+        width: 1000px;
+        background-color: #B0E3FF;
+        padding-top: 48px;
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    .timelineDiv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 145px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timelineDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 115px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timelineDiv3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 116px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timelineDiv4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 104px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timelineDiv5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 124px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timelineDiv6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90px;
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    
+    .timeIcon{
+        padding-bottom: 16px;
+    }
+    
+    .timelineText{
+        font-size: 16px;
+        font-weight: 500;
+        color: #1E1E1E;
+        line-height: 19px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+.helpDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    height: 750px;
+    width: 100%;
+    padding: 24px;
+}
+
+.helpContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 925px;
+    height: auto;
+}
+
+.innerHelpContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.fundsRaised{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.helpTextDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 605px;
+    text-align: center;
+}
+
+.refundDiv{
+    display: flex;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.donoContainer2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 525px) {
+    .box {
+        height: 150px;
+        width: 150px;
+        position: relative;
+        padding-top: 12px;
+        background: #002E48;
+        border-radius: 100%;
+        overflow: hidden;
+        z-index: 9998;
+    }
 }
